@@ -13,6 +13,15 @@
 		4D8B58D82A2E11C5004F28BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B58D62A2E11C5004F28BE /* Main.storyboard */; };
 		4D8B58DA2A2E11C6004F28BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B58D92A2E11C6004F28BE /* Assets.xcassets */; };
 		4D8B58DD2A2E11C6004F28BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B58DB2A2E11C6004F28BE /* LaunchScreen.storyboard */; };
+		4D8B58E52A2E1473004F28BE /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B58E42A2E1473004F28BE /* Calculation.swift */; };
+		4D8B58E72A2E14EC004F28BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B58E62A2E14EC004F28BE /* Constants.swift */; };
+		4D8B58EC2A2E1EF7004F28BE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B58EB2A2E1EF7004F28BE /* Util.swift */; };
+		4D8B58EE2A2E1F67004F28BE /* ErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B58ED2A2E1F67004F28BE /* ErrorMessages.swift */; };
+		4D8B58F12A2E29BF004F28BE /* ElectricCostCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B58EF2A2E29BF004F28BE /* ElectricCostCalculator.xcdatamodeld */; };
+		4D8B59162A2E320C004F28BE /* CostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B59152A2E320C004F28BE /* CostViewController.swift */; };
+		4D8B59182A2E3D9F004F28BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B59172A2E3D9F004F28BE /* GoogleService-Info.plist */; };
+		4D8B591B2A2E40B4004F28BE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8B591A2A2E40B4004F28BE /* FirebaseFirestore */; };
+		4D8B591D2A2E40B4004F28BE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8B591C2A2E40B4004F28BE /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,13 @@
 		4D8B58D92A2E11C6004F28BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D8B58DC2A2E11C6004F28BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D8B58DE2A2E11C6004F28BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D8B58E42A2E1473004F28BE /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		4D8B58E62A2E14EC004F28BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4D8B58EB2A2E1EF7004F28BE /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		4D8B58ED2A2E1F67004F28BE /* ErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessages.swift; sourceTree = "<group>"; };
+		4D8B58F02A2E29BF004F28BE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4D8B59152A2E320C004F28BE /* CostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewController.swift; sourceTree = "<group>"; };
+		4D8B59172A2E3D9F004F28BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8B591B2A2E40B4004F28BE /* FirebaseFirestore in Frameworks */,
+				4D8B591D2A2E40B4004F28BE /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +74,46 @@
 		4D8B58CF2A2E11C5004F28BE /* ElectricCostCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				4D8B58E82A2E1E62004F28BE /* Model */,
+				4D8B58E92A2E1E6A004F28BE /* View */,
+				4D8B58EA2A2E1E71004F28BE /* ViewModel */,
+				4D8B58E62A2E14EC004F28BE /* Constants.swift */,
+				4D8B58EB2A2E1EF7004F28BE /* Util.swift */,
 				4D8B58D02A2E11C5004F28BE /* AppDelegate.swift */,
 				4D8B58D22A2E11C5004F28BE /* SceneDelegate.swift */,
-				4D8B58D42A2E11C5004F28BE /* ViewController.swift */,
-				4D8B58D62A2E11C5004F28BE /* Main.storyboard */,
+				4D8B59172A2E3D9F004F28BE /* GoogleService-Info.plist */,
+				4D8B58EF2A2E29BF004F28BE /* ElectricCostCalculator.xcdatamodeld */,
 				4D8B58D92A2E11C6004F28BE /* Assets.xcassets */,
 				4D8B58DB2A2E11C6004F28BE /* LaunchScreen.storyboard */,
 				4D8B58DE2A2E11C6004F28BE /* Info.plist */,
 			);
 			path = ElectricCostCalculator;
+			sourceTree = "<group>";
+		};
+		4D8B58E82A2E1E62004F28BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B58ED2A2E1F67004F28BE /* ErrorMessages.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D8B58E92A2E1E6A004F28BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B58D62A2E11C5004F28BE /* Main.storyboard */,
+				4D8B58D42A2E11C5004F28BE /* ViewController.swift */,
+				4D8B59152A2E320C004F28BE /* CostViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D8B58EA2A2E1E71004F28BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B58E42A2E1473004F28BE /* Calculation.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +132,10 @@
 			dependencies = (
 			);
 			name = ElectricCostCalculator;
+			packageProductDependencies = (
+				4D8B591A2A2E40B4004F28BE /* FirebaseFirestore */,
+				4D8B591C2A2E40B4004F28BE /* FirebaseStorage */,
+			);
 			productName = ElectricCostCalculator;
 			productReference = 4D8B58CD2A2E11C5004F28BE /* ElectricCostCalculator.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,9 @@
 				Base,
 			);
 			mainGroup = 4D8B58C42A2E11C5004F28BE;
+			packageReferences = (
+				4D8B59192A2E40B4004F28BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4D8B58CE2A2E11C5004F28BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +184,7 @@
 				4D8B58DD2A2E11C6004F28BE /* LaunchScreen.storyboard in Resources */,
 				4D8B58DA2A2E11C6004F28BE /* Assets.xcassets in Resources */,
 				4D8B58D82A2E11C5004F28BE /* Main.storyboard in Resources */,
+				4D8B59182A2E3D9F004F28BE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8B58EE2A2E1F67004F28BE /* ErrorMessages.swift in Sources */,
+				4D8B59162A2E320C004F28BE /* CostViewController.swift in Sources */,
+				4D8B58E72A2E14EC004F28BE /* Constants.swift in Sources */,
+				4D8B58EC2A2E1EF7004F28BE /* Util.swift in Sources */,
+				4D8B58F12A2E29BF004F28BE /* ElectricCostCalculator.xcdatamodeld in Sources */,
 				4D8B58D52A2E11C5004F28BE /* ViewController.swift in Sources */,
 				4D8B58D12A2E11C5004F28BE /* AppDelegate.swift in Sources */,
 				4D8B58D32A2E11C5004F28BE /* SceneDelegate.swift in Sources */,
+				4D8B58E52A2E1473004F28BE /* Calculation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +421,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D8B59192A2E40B4004F28BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D8B591A2A2E40B4004F28BE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D8B59192A2E40B4004F28BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		4D8B591C2A2E40B4004F28BE /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D8B59192A2E40B4004F28BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4D8B58EF2A2E29BF004F28BE /* ElectricCostCalculator.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D8B58F02A2E29BF004F28BE /* Model.xcdatamodel */,
+			);
+			currentVersion = 4D8B58F02A2E29BF004F28BE /* Model.xcdatamodel */;
+			path = ElectricCostCalculator.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4D8B58C52A2E11C5004F28BE /* Project object */;
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>668419429942-ceggao8j42vq7rdme0i8t5goti7vkdp8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.668419429942-ceggao8j42vq7rdme0i8t5goti7vkdp8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBrxMyqI597OtNz0qNu3UclKrXdhLOKlm0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>668419429942</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>busesahinbas.ElectricCostCalculator</string>
+	<key>PROJECT_ID</key>
+	<string>electriccostcalculator</string>
+	<key>STORAGE_BUCKET</key>
+	<string>electriccostcalculator.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:668419429942:ios:7c8332a3f225e11f67ea97</string>
+</dict>
+</plist>
